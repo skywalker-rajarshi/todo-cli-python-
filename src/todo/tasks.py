@@ -1,5 +1,5 @@
 from datetime import date
-from storage import save_tasks, DATA_FILE
+from todo.storage import save_tasks, DATA_FILE
 from tabulate import tabulate
 
 
@@ -34,7 +34,7 @@ def list_tasks(task_master):
         )
 
     headers = ["ID", "Status", "Description", "Created On"]
-    print(tabulate(table_data, headers=headers, tablefmt="mixed_grid"))
+    print(tabulate(table_data, headers=headers, tablefmt="fancy_grid"))
 
 
 def list_pending_tasks(task_master):

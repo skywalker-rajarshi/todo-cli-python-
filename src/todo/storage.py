@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Get the directory where this script is located
-BASE_DIR = Path(__file__).parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent
 
 # Build the path to your data file, relative to this script
 DATA_FILE = BASE_DIR / "data" / "tasks.json"

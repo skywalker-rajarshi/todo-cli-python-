@@ -1,6 +1,6 @@
 import argparse
-from storage import load_tasks, save_tasks
-from tasks import (
+from todo.storage import load_tasks, save_tasks
+from todo.tasks import (
     add_task,
     list_tasks,
     list_pending_tasks,
